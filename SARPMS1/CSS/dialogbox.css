@@ -1,0 +1,48 @@
+﻿/* Dialog */
+
+#dialog-bg
+{
+	position:absolute;
+	z-index:500;
+	top: 0px;
+	left: 0px;
+	background:#000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	clear:both; float:none;
+}
+.dialog-head
+{
+clear:both; float:none; height:35px; line-height:35px; margin:0px;	background:#FFF; border-bottom:1px solid #CCC;background:#fff url(../Image/controls/bg-clouds.jpg) no-repeat center top;
+}
+#dialog-title
+{
+	margin:0px; padding:1px 5px; font-size:11pt; float:left;
+}
+.dialog-menu
+{
+ width:50px; float:right;padding:5px; text-align:right; 
+}
+a.dialog-btnClose
+{
+ width:30px; height:31px; display:block; background:url(../Image/controls/btnClose.gif) no-repeat center bottom; float:right
+}
+a.dialog-btnClose:hover
+{
+	background:url(../Image/controls/btnClose.gif) no-repeat center top;	
+}
+.dialog-body
+{
+	  margin:0px; padding:0px; background:#FFF; width:100%;
+}
+.dialog-page
+{
+	position:absolute;
+	z-index:1000;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+	background:#FFF;
+	border:1px solid #444; border-right-width:3px;border-bottom-width:3px;
+}

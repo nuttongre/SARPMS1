@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterManageView.master.cs"
+    Inherits="MasterManageView" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <%=ConfigurationManager.AppSettings["ProjectName"]%></title>
+    <link rel="shortcut icon" href="../Image/logo/logo.ico" />
+    <link rel="icon" href="../Image/logo/logo.ico" />
+
+    <link rel="stylesheet" type="text/css" href ="../CSS/MenuFileStyle.css"  />
+    <link rel="StyleSheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/gridview.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/dialogbox.css" />
+
+    <script type="text/javascript" src="../scripts/StarFramework.js"></script>
+    <script src="../scripts/Frameworks.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../scripts/DataGridView.js"></script>
+    <script type="text/javascript" src="../scripts/calendar.js"></script>
+    <script type="text/javascript" src="../scripts/Dialog.js"></script>   
+    <script src="../scripts/TreeView.js" type="text/javascript"></script>   
+    <link href="../CSS/TreeView.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="containner">
+        <div id="page">       
+            <div id="frame" style="background-color:#5797BB;">
+                <div id="layout">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                <p class="clear">
+                </p>
+            </div>
+            <div>
+                <Control:Footer ID="footer" runat="server" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

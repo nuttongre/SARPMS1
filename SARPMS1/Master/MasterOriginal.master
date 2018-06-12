@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterOriginal.master.cs"
+    Inherits="MasterOriginal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <%=ConfigurationManager.AppSettings["ProjectName"] + " V." + Star.VersionControl.Versions.ProductVersion%></title>
+    <link rel="shortcut icon" href="../Image/logo/logo.ico" />
+    <link rel="icon" href="../Image/logo/logo.ico" />
+
+    <link rel="stylesheet" type="text/css" href="../CSS/MenuFileStyle.css" />
+    <link rel="StyleSheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/gridview.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/dialogbox.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/TreeView.css" />
+
+    <script type="text/javascript" src="../scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../scripts/StarFramework.js"></script>
+    <script type="text/javascript" src="../scripts/Frameworks.js"></script>
+    <script type="text/javascript" src="../scripts/DataGridView.js"></script>
+    <script type="text/javascript" src="../scripts/calendar.js"></script>
+    <script type="text/javascript" src="../scripts/Dialog.js"></script>
+    <script type="text/javascript" src="../scripts/TreeView.js"></script>
+
+    <%--    <meta http-equiv="Page-Exit" content="blendTrans(Duration=1)" />
+    --%>
+    <script type="text/javascript">
+        function AppleWebKit(menu) {
+            if (navigator.userAgent.match(/AppleWebKit/i)) {
+                var nav = document.getElementById(menu);
+                if (nav) {
+                    var els = nav.getElementsByTagName('li');
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].addEventListener("touchstart", function ()
+                        { this.className = "hover"; }, false); els[i].addEventListener("touchend", function ()
+                        { this.className = ""; }, false);
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="containner">
+            <div id="page">
+                <div class="menuhead">
+                    <asp:Label ID="lbUsername" runat="server" ForeColor="Black" Font-Bold="true"></asp:Label>
+                </div>
+                <div class="menuhead">
+                    <Control:MenuHead ID="MenuHead" runat="server" />
+                </div>
+                <div id="banner">
+                    <Control:Banner ID="Banner" runat="server" />
+                    <asp:Label ID="Label1" runat="server" ForeColor="White" Font-Bold="true"></asp:Label>
+                </div>
+                <div id="mainmenu">
+                    <ul id="css3menu1" class="topmenu" style="position: relative; top: 1px; width: 99%; z-index:99;">
+                        <li class="topmenu"><a href="../MasterData/PageDefault.aspx" title="หน้าแรก">
+                            <img src="../Image/MenuStlye/Home1.png" alt="หน้าแรก">หน้าแรก</a></li>
+                        <asp:Repeater ID="Repeater1" runat="server" OnItemDataBound="Repeater1_ItemDataBound">
+                            <ItemTemplate>
+                                <li class="topmenu"><a href="#" title="<%#Eval("MyMainMenuName")%>"><span>
+                                    <img src="../Image/MenuStlye/<%#Eval("ImgName")%>" alt="<%#Eval("MyMainMenuName")%>"><%#Eval("MyMainMenuName")%></span></a>
+                                    <div class="submenu" style="width: 280px;">
+                                        <div class="column" style="width: 100%">
+                                            <ul>
+                                                <asp:Repeater ID="repDetail" runat="server">
+                                                    <ItemTemplate>
+                                                        <li><%# LinkName(Eval("LinkName").ToString(), Eval("MySubMenuName").ToString()) %><img src="../Image/MenuStlye/<%#Eval("ImgName2")%>" alt="<%#Eval("MySubMenuName")%>" /><%#Eval("MySubMenuName")%></a></li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                </div>
+                <div id="frame" style="background-color: #f68529;">
+                    <div id="layout">
+                        <%--<div id="workspace">--%>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <%--</div>--%>
+                    </div>
+                    <p class="clear">
+                    </p>
+                </div>
+                <div>
+                    <Control:Footer ID="footer" runat="server" />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

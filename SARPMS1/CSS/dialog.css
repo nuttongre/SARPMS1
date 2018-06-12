@@ -1,0 +1,24 @@
+﻿#dialog-bg
+{
+	position:absolute;
+	z-index:500;
+	top: 0px;
+	left: 0px;
+	background:#000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	clear:both; float:none;
+
+}
+.progress    
+{
+    z-index:1000;
+    text-align:center;   
+    vertical-align:middle;   
+    position: absolute;   
+    left: 40%;   
+    top: 50%; 
+    white-space:nowrap;   
+    padding:5px;
+} 

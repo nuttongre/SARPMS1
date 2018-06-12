@@ -1,0 +1,48 @@
+﻿.mainframe {
+    width: 80%; float: left; height: 768px;
+}
+.ruler {
+    width: 19%; float: right; height: 768px;
+}
+.imgruler {
+    background: url(../Image/ruler.png) no-repeat right; border: 0; width: 231px; height: 768px; float: right;
+}
+.divSchoolName {
+    width: auto; float: left; margin-top: 77px; margin-left: 20px;
+}
+.lblSchoolName {
+    font-size: 29pt; font-weight: bold; color: gray; font-family: SukhumvitBold;
+}
+.frameLogin {
+    height: 590px;
+}
+.login {
+    padding-top: 220px; 
+    padding-left: 40px; 
+}
+.spacelogin {
+    padding:7px 0px;
+}
+.imglogo {
+    width: 71px; height: 71px; 
+    border: none; float: left; 
+    margin-top: 40px; margin-left: 150px;
+}
+.recomment {
+    padding-left:5px;
+}
+.txtRecomment {
+    color: White; font-family: SukhumvitReg; font-size: 14pt;
+}
+.imgIE {
+    vertical-align: bottom; width: 30px; height: 28px;
+}
+.txtLastUpdate {
+    color: black; font-family: SukhumvitReg; font-size: 12pt;
+}
+.txtLastUpdateR {
+    padding-top: 15px; padding-right: 5px; float: right;
+}
+.txtLastUpdateL {
+    padding-top: 15px; padding-left: 10px; float:left;
+}

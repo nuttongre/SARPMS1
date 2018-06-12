@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StudioLang>
+  <Languages Default="4">
+    <!--Language id="1" value="Arabic"/-->
+    <Language id="2" value="简体中文" />
+    <Language id="3" value="繁體中文" />
+    <Language id="4" value="English" />
+    <!--Language id="5" value="French"/-->
+    <!--Language id="6" value="German"/-->
+    <Language id="7" value="Indonesian" />
+    <!--Language id="8" value="Japanese"/-->
+    <!--Language id="9" value="Korean"/-->
+    <Language id="10" value="Malay" />
+    <!--Language id="11" value="Russian"/-->
+    <!--Language id="12" value="Spanish"/-->
+    <Language id="13" value="Thai" />
+    <Language id="14" value="Vietnamese" />
+  </Languages>
+  <Locations>
+    <L LId="4" Id="af" />
+    <L LId="4" Id="sq" />
+    <L LId="1" Id="ar-sa" />
+    <L LId="1" Id="ar-iq" />
+    <L LId="1" Id="ar-eg" />
+    <L LId="1" Id="ar-ly" />
+    <L LId="1" Id="ar-dz" />
+    <L LId="1" Id="ar-ma" />
+    <L LId="1" Id="ar-tn" />
+    <L LId="1" Id="ar-om" />
+    <L LId="1" Id="ar-ye" />
+    <L LId="1" Id="ar-sy" />
+    <L LId="1" Id="ar-jo" />
+    <L LId="1" Id="ar-lb" />
+    <L LId="1" Id="ar-kw" />
+    <L LId="1" Id="ar-ae" />
+    <L LId="1" Id="ar-bh" />
+    <L LId="1" Id="ar-qa" />
+    <L LId="4" Id="hy" />
+    <L LId="4" Id="as" />
+    <L LId="4" Id="az" />
+    <L LId="4" Id="eu" />
+    <L LId="4" Id="be" />
+    <L LId="4" Id="bn" />
+    <L LId="4" Id="bg" />
+    <L LId="4" Id="ca" />
+    <L LId="3" Id="zh-tw" />
+    <L LId="2" Id="zh-cn" />
+    <L LId="3" Id="zh-hk" />
+    <L LId="2" Id="zh-sg" />
+    <L LId="2" Id="zh-mo" />
+    <L LId="4" Id="hr" />
+    <L LId="4" Id="cs" />
+    <L LId="4" Id="da" />
+    <L LId="4" Id="nl" />
+    <L LId="4" Id="nl-be" />
+    <L LId="4" Id="en-us" />
+    <L LId="4" Id="en-gb" />
+    <L LId="4" Id="en-au" />
+    <L LId="4" Id="en-ca" />
+    <L LId="4" Id="en-nz" />
+    <L LId="4" Id="en-ie" />
+    <L LId="4" Id="en-za" />
+    <L LId="4" Id="en-jm" />
+    <L LId="4" Id="en-bz" />
+    <L LId="4" Id="en-tt" />
+    <L LId="4" Id="en-zw" />
+    <L LId="4" Id="en-ph" />
+    <L LId="4" Id="et" />
+    <L LId="4" Id="fo" />
+    <L LId="4" Id="fa" />
+    <L LId="4" Id="fi" />
+    <L LId="5" Id="fr" />
+    <L LId="5" Id="fr-be" />
+    <L LId="5" Id="fr-ca" />
+    <L LId="5" Id="fr-ch" />
+    <L LId="5" Id="fr-lu" />
+    <L LId="5" Id="fr-mc" />
+    <L LId="4" Id="ka" />
+    <L LId="6" Id="de" />
+    <L LId="6" Id="de-ch" />
+    <L LId="6" Id="de-at" />
+    <L LId="6" Id="de-lu" />
+    <L LId="6" Id="de-li" />
+    <L LId="4" Id="el" />
+    <L LId="4" Id="gu" />
+    <L LId="4" Id="he" />
+    <L LId="4" Id="hi" />
+    <L LId="4" Id="hu" />
+    <L LId="4" Id="is" />
+    <L LId="7" Id="id" />
+    <L LId="4" Id="it" />
+    <L LId="4" Id="it-ch" />
+    <L LId="8" Id="ja" />
+    <L LId="4" Id="kn" />
+    <L LId="4" Id="kk" />
+    <L LId="4" Id="kok" />
+    <L LId="9" Id="ko" />
+    <L LId="4" Id="lv" />
+    <L LId="4" Id="lt" />
+    <L LId="10" Id="ms" />
+    <L LId="4" Id="ml" />
+    <L LId="4" Id="mr" />
+    <L LId="4" Id="ne" />
+    <L LId="4" Id="nb-no" />
+    <L LId="4" Id="nn-no" />
+    <L LId="4" Id="or" />
+    <L LId="4" Id="pl" />
+    <L LId="4" Id="pt-br" />
+    <L LId="4" Id="pt" />
+    <L LId="4" Id="pa" />
+    <L LId="4" Id="ro" />
+    <L LId="11" Id="ru" />
+    <L LId="4" Id="sa" />
+    <L LId="4" Id="sr" />
+    <L LId="4" Id="sk" />
+    <L LId="4" Id="ls" />
+    <L LId="12" Id="es" />
+    <L LId="12" Id="es-mx" />
+    <L LId="12" Id="es-gt" />
+    <L LId="12" Id="es-cr" />
+    <L LId="12" Id="es-pa" />
+    <L LId="12" Id="es-do" />
+    <L LId="12" Id="es-ve" />
+    <L LId="12" Id="es-co" />
+    <L LId="12" Id="es-pe" />
+    <L LId="12" Id="es-ar" />
+    <L LId="12" Id="es-ec" />
+    <L LId="12" Id="es-cl" />
+    <L LId="12" Id="es-uy" />
+    <L LId="12" Id="es-py" />
+    <L LId="12" Id="es-bo" />
+    <L LId="12" Id="es-sv" />
+    <L LId="12" Id="es-hn" />
+    <L LId="12" Id="es-ni" />
+    <L LId="12" Id="es-pr" />
+    <L LId="4" Id="sx" />
+    <L LId="4" Id="sw" />
+    <L LId="4" Id="sv" />
+    <L LId="4" Id="sv-fi" />
+    <L LId="4" Id="ta" />
+    <L LId="4" Id="tt" />
+    <L LId="4" Id="te" />
+    <L LId="13" Id="th" />
+    <L LId="4" Id="tr" />
+    <L LId="4" Id="uk" />
+    <L LId="4" Id="ur" />
+    <L LId="4" Id="uz" />
+    <L LId="14" Id="vi" />
+    <L LId="14" Id="vi-vn" />	    
+  </Locations>
+  <LangMsg Id="2">
+	<Msg Id="1001">场景</Msg>
+    <Msg Id="1002">目录</Msg>
+   	<Msg Id="1003">描述</Msg>
+		<Msg Id="1004">备注</Msg>
+		<Msg Id="1005">聊天</Msg>
+		<Msg Id="1006">语言</Msg>
+		<Msg Id="1007">时间</Msg>
+		<Msg Id="1008">章节 %x1%</Msg>
+		<Msg Id="1009">时长:%x1%</Msg>
+		<Msg Id="1010">标题:</Msg>
+		<Msg Id="1011">描述:</Msg>
+		<Msg Id="1012">作者:</Msg>
+		<Msg Id="1013">邮件:</Msg>
+		<Msg Id="1014">创建日期:</Msg>
+		<Msg Id="1015">Studio Player</Msg>
+		<Msg Id="1016">加载内容</Msg>
+		<Msg Id="1017">正在缓存内容,请稍等</Msg>
+		<Msg Id="1018">您也可以点击下边的"立即开始"按钮直接开始播放</Msg>
+		<Msg Id="1019">立即开始</Msg>
+		<Msg Id="1020">标题:</Msg>
+		<Msg Id="1021">描述:</Msg>
+		<Msg Id="1022">作者:</Msg>
+		<Msg Id="1023">邮件:</Msg>
+		<Msg Id="1024">创建日期:</Msg>
+		<Msg Id="1025">本发布内容播放时间为 %x1% 分钟 %x2% 秒. 有场景 %x3%个.</Msg>
+		<Msg Id="1026">%x1% 场景%x1% (%x4%)</Msg>
+	  <Msg Id="1027">搜索</Msg>
+		<Msg Id="1028">搜索范围:</Msg>
+		<Msg Id="1029">关键字:</Msg>
+		<Msg Id="1030">提交</Msg>
+		<Msg Id="1031">当前录制</Msg>
+		<Msg Id="1032">当前作者</Msg>
+		<Msg Id="1033">当前公司</Msg>
+		<Msg Id="1034">所有录制</Msg>
+		<Msg Id="1035">当前课程</Msg>
+		<Msg Id="1036">没有搜索到相关结果</Msg>
+		<Msg Id="1037">MP3文件下载</Msg>
+	  <Msg Id="1038">MP4文件下载</Msg>
+		<Msg Id="1039">章节 %x1%</Msg>
+		<Msg Id="1040">内容</Msg>
+		<Msg Id="1041">MP3:</Msg>
+		<Msg Id="1042">MP4:</Msg>	
+		<Msg Id="1043">下载</Msg>
+		<Msg Id="1044">取消</Msg>
+		<Msg Id="1045">返回</Msg>
+		<Msg Id="1046">下载失败</Msg>
+		<Msg Id="1047">重试</Msg>
+		<Msg Id="1048">秒</Msg>
+		<Msg Id="1049">保存成功</Msg>
+		<Msg Id="1050">保存失败</Msg>
+		<Msg Id="1051">请选择要播放的视频</Msg>
+		<Msg Id="1052">%x1%秒钟后,默认播放“内容”</Msg>
+		<Msg Id="1053">内容</Msg>
+		<Msg Id="1054">头像</Msg>
+		<Msg Id="1055">切换到内容</Msg>
+		<Msg Id="1056">切换到头像</Msg>
+	
+  </LangMsg>
+  <LangMsg Id="3">
+    <Msg Id="1001">場景</Msg>
+    <Msg Id="1002">目錄</Msg>
+    <Msg Id="1003">描述</Msg>
+		<Msg Id="1004">備註</Msg>
+		<Msg Id="1005">聊天</Msg>
+		<Msg Id="1006">語言</Msg>
+		<Msg Id="1007">時間</Msg>
+		<Msg Id="1008">章節 %x1%</Msg>
+		<Msg Id="1009">時長:%x1%</Msg>
+		<Msg Id="1010">標題:</Msg>
+		<Msg Id="1011">描述:</Msg>
+		<Msg Id="1012">作者:</Msg>
+		<Msg Id="1013">郵件:</Msg>
+		<Msg Id="1014">創建日期:</Msg>
+		<Msg Id="1015">Studio Player</Msg>
+		<Msg Id="1016">加載內容</Msg>
+		<Msg Id="1017">正在緩存內容,請稍等</Msg>
+		<Msg Id="1018">您也可以點擊下邊的"立即開始"按鈕直接開始播放</Msg>
+		<Msg Id="1019">立即開始</Msg>
+		<Msg Id="1020">標題:</Msg>
+		<Msg Id="1021">描述:</Msg>
+		<Msg Id="1022">作者:</Msg>
+		<Msg Id="1023">郵件:</Msg>
+		<Msg Id="1024">創建日期:</Msg>
+		<Msg Id="1025">本發布內容播放時間為 %x1% 分鐘 %x2% 秒. 有場景 %x3%個.</Msg>
+		<Msg Id="1026">%x1% 場景%x1% (%x4%)</Msg>
+	  <Msg Id="1027">搜索</Msg>
+		<Msg Id="1028">搜索範圍:</Msg>
+		<Msg Id="1029">關鍵字:</Msg>
+		<Msg Id="1030">提交</Msg>
+		<Msg Id="1031">當前錄制</Msg>
+		<Msg Id="1032">當前作者</Msg>
+		<Msg Id="1033">當前公司</Msg>
+		<Msg Id="1034">所有錄制</Msg>
+		<Msg Id="1035">當前課程</Msg>
+		<Msg Id="1036">沒有搜索到相關結果</Msg>
+		<Msg Id="1037">MP3文件下載</Msg>
+	  <Msg Id="1038">MP4文件下載</Msg>
+		<Msg Id="1039">章節 %x1%</Msg>
+		<Msg Id="1040">內容</Msg>
+		<Msg Id="1041">MP3:</Msg>
+		<Msg Id="1042">MP4:</Msg>
+		<Msg Id="1043">下載</Msg>
+		<Msg Id="1044">取消</Msg>
+		<Msg Id="1045">返回</Msg>
+		<Msg Id="1046">下載失敗</Msg>
+		<Msg Id="1047">重試</Msg>
+		<Msg Id="1048">秒</Msg>
+		<Msg Id="1049">保存成功</Msg>
+		<Msg Id="1050">保存失敗</Msg>
+		<Msg Id="1051">請選擇要播放的視頻</Msg>
+		<Msg Id="1052">%x1%秒鍾後,默認播放“內容”</Msg>
+		<Msg Id="1053">內容</Msg>
+		<Msg Id="1054">頭像</Msg>
+		<Msg Id="1055">切換到內容</Msg>
+		<Msg Id="1056">切換到頭像</Msg>
+</LangMsg>
+	
+	<LangMsg Id="4">
+	<Msg Id="1001">Scene</Msg>
+	<Msg Id="1002">TOC</Msg>
+	<Msg Id="1003">Info</Msg>
+	<Msg Id="1004">Notes</Msg>
+	<Msg Id="1005">Chat</Msg>
+	<Msg Id="1006">Language</Msg>
+	<Msg Id="1007">Time</Msg>
+	<Msg Id="1008">chapter %x1%</Msg>
+	<Msg Id="1009">Duration:%x1%</Msg>
+	<Msg Id="1010">Title:</Msg>
+	<Msg Id="1011">Desc:</Msg>
+	<Msg Id="1012">Author:</Msg>
+	<Msg Id="1013">Email:</Msg>
+	<Msg Id="1014">Creation Date:</Msg>
+	<Msg Id="1015">Studio Player</Msg>
+	<Msg Id="1016">Loading</Msg>
+	<Msg Id="1017">Please wait...Caching content</Msg>
+	<Msg Id="1018">Click 'Play Now' if you wish to skip the caching process</Msg>
+	<Msg Id="1019">Play Now</Msg>
+	<Msg Id="1020">Title:</Msg>
+	<Msg Id="1021">Description:</Msg>
+	<Msg Id="1022">Author:</Msg>
+	<Msg Id="1023">Email:</Msg>
+	<Msg Id="1024">Creation Date:</Msg>
+	<Msg Id="1025">This recording is %x1% minute(s) and %x2% second(s) long. Including %x3% scenes.</Msg>
+	<Msg Id="1026">%x1% Scene%x1% (%x4%)</Msg>
+	<Msg Id="1027">Search</Msg>
+	<Msg Id="1028">Search From:</Msg>
+	<Msg Id="1029">Keyword:</Msg>
+	<Msg Id="1030">Go</Msg>
+	<Msg Id="1031">Current Presentation</Msg>
+	<Msg Id="1032">Current Author</Msg>
+	<Msg Id="1033">Current Company</Msg>
+	<Msg Id="1034">All Presentations</Msg>
+	<Msg Id="1035">Current Course</Msg>
+	<Msg Id="1036">No results</Msg>
+	<Msg Id="1037">MP3 file download link</Msg>
+  <Msg Id="1038">MP4 file download link</Msg>
+	<Msg Id="1039">chapter %x1%</Msg>
+	<Msg Id="1040">Content</Msg>
+	<Msg Id="1041">MP3:</Msg>
+	<Msg Id="1042">MP4:</Msg>
+	<Msg Id="1043">Download</Msg>
+	<Msg Id="1044">Cancel</Msg>
+	<Msg Id="1045">Back</Msg>
+	<Msg Id="1046">download failed</Msg>
+	<Msg Id="1047">Retry</Msg>
+	<Msg Id="1048">sec</Msg>
+	<Msg Id="1049">Saved successfully</Msg>
+	<Msg Id="1050">Failed to save</Msg>
+	<Msg Id="1051">Please select the video channel</Msg>
+	<Msg Id="1052">Content channel will be played in %x1% secs</Msg>
+	<Msg Id="1053">Content</Msg>
+	<Msg Id="1054">Camera</Msg>
+	<Msg Id="1055">Switch To Content</Msg>
+	<Msg Id="1056">Switch To Camera</Msg>
+	
+	
+	
+
+
+
+	
+</LangMsg>
+  <LangMsg Id="13">
+    <!--Msg Id="1001">ยินดีต้อนรับสู่ AcuStudio</Msg-->
+    	<Msg Id="1001">Scene</Msg>
+	<Msg Id="1002">TOC</Msg>
+	<Msg Id="1003">Info</Msg>
+	<Msg Id="1004">Notes</Msg>
+	<Msg Id="1005">Chat</Msg>
+	<Msg Id="1006">Language</Msg>
+	<Msg Id="1007">Time</Msg>
+	<Msg Id="1008">chapter %x1%</Msg>
+	<Msg Id="1009">Duration:%x1%</Msg>
+	<Msg Id="1010">Title:</Msg>
+	<Msg Id="1011">Desc:</Msg>
+	<Msg Id="1012">Author:</Msg>
+	<Msg Id="1013">Email:</Msg>
+	<Msg Id="1014">Creation Date:</Msg>
+	<Msg Id="1015">Studio Player</Msg>
+	<Msg Id="1016">Loading</Msg>
+	<Msg Id="1017">Please wait...Caching content</Msg>
+	<Msg Id="1018">Click 'Play Now' if you wish to skip the caching process</Msg>
+	<Msg Id="1019">Play Now</Msg>
+	<Msg Id="1020">Title:</Msg>
+	<Msg Id="1021">Description:</Msg>
+	<Msg Id="1022">Author:</Msg>
+	<Msg Id="1023">Email:</Msg>
+	<Msg Id="1024">Creation Date:</Msg>
+	<Msg Id="1025">This recording is %x1% minute(s) and %x2% second(s) long. Including %x3% scenes.</Msg>
+	<Msg Id="1026">%x1% Scene%x1% (%x4%)</Msg>
+	<Msg Id="1027">Search</Msg>
+	<Msg Id="1028">Search From:</Msg>
+	<Msg Id="1029">Keyword:</Msg>
+	<Msg Id="1030">Go</Msg>
+	<Msg Id="1031">Current Presentation</Msg>
+	<Msg Id="1032">Current Author</Msg>
+	<Msg Id="1033">Current Company</Msg>
+	<Msg Id="1034">All Presentations</Msg>
+	<Msg Id="1035">Current Course</Msg>
+	<Msg Id="1036">No results</Msg>
+	<Msg Id="1037">MP3 file download link</Msg>
+    	<Msg Id="1038">MP4 file download link</Msg>
+	<Msg Id="1039">chapter %x1%</Msg>
+	<Msg Id="1040">Content</Msg>
+	<Msg Id="1041">MP3:</Msg>
+	<Msg Id="1042">MP4:</Msg>
+	<Msg Id="1043">Download</Msg>
+	<Msg Id="1044">Cancel</Msg>
+	<Msg Id="1045">Back</Msg>
+	<Msg Id="1046">download failed</Msg>
+	<Msg Id="1047">Retry</Msg>	
+  </LangMsg>
+	<LangMsg Id="14">
+		<!--Msg Id="1001">Chào mừng đến với AcuStudio</Msg-->
+	<Msg Id="1001">Scene</Msg>
+	<Msg Id="1002">TOC</Msg>
+	<Msg Id="1003">Info</Msg>
+	<Msg Id="1004">Notes</Msg>
+	<Msg Id="1005">Chat</Msg>
+	<Msg Id="1006">Language</Msg>
+	<Msg Id="1007">Time</Msg>
+	<Msg Id="1008">chapter %x1%</Msg>
+	<Msg Id="1009">Duration:%x1%</Msg>
+	<Msg Id="1010">Title:</Msg>
+	<Msg Id="1011">Desc:</Msg>
+	<Msg Id="1012">Author:</Msg>
+	<Msg Id="1013">Email:</Msg>
+	<Msg Id="1014">Creation Date:</Msg>
+	<Msg Id="1015">Studio Player</Msg>
+	<Msg Id="1016">Loading</Msg>
+	<Msg Id="1017">Please wait...Caching content</Msg>
+	<Msg Id="1018">Click 'Play Now' if you wish to skip the caching process</Msg>
+	<Msg Id="1019">Play Now</Msg>
+	<Msg Id="1020">Title:</Msg>
+	<Msg Id="1021">Description:</Msg>
+	<Msg Id="1022">Author:</Msg>
+	<Msg Id="1023">Email:</Msg>
+	<Msg Id="1024">Creation Date:</Msg>
+	<Msg Id="1025">This recording is %x1% minute(s) and %x2% second(s) long. Including %x3% scenes.</Msg> 
+	<Msg Id="1026">%x1% Scene%x1% (%x4%)</Msg>
+	<Msg Id="1027">Search</Msg>
+	<Msg Id="1028">Search From:</Msg>
+	<Msg Id="1029">Keyword:</Msg>
+	<Msg Id="1030">Go</Msg>
+	<Msg Id="1031">Current Presentation</Msg>
+	<Msg Id="1032">Current Author</Msg>
+	<Msg Id="1033">Current Company</Msg>
+	<Msg Id="1034">All Presentations</Msg>
+	<Msg Id="1035">Current Course</Msg>
+	<Msg Id="1036">No results</Msg>
+	<Msg Id="1037">MP3 file download link</Msg>
+    	<Msg Id="1038">MP4 file download link</Msg>
+	<Msg Id="1039">chapter %x1%</Msg>
+	<Msg Id="1040">Content</Msg>
+	<Msg Id="1041">MP3:</Msg>
+	<Msg Id="1042">MP4:</Msg>
+	<Msg Id="1043">Download</Msg>
+	<Msg Id="1044">Cancel</Msg>
+	<Msg Id="1045">Back</Msg>
+	<Msg Id="1046">download failed</Msg>
+	<Msg Id="1047">Retry</Msg>	
+	<Msg Id="1048">sec</Msg>
+	<Msg Id="1049">Saved successfully</Msg>
+	<Msg Id="1050">Failed to save</Msg>
+	<Msg Id="1051">Please select the video channel</Msg>
+	<Msg Id="1052">Content channel will be played in %x1% secs</Msg>
+	<Msg Id="1053">Content</Msg>
+	<Msg Id="1054">Camera</Msg>
+	<Msg Id="1055">Switch To Content</Msg>
+	<Msg Id="1056">Switch To Camera</Msg>
+	</LangMsg>
+</StudioLang>

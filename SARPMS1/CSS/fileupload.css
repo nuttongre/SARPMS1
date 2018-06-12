@@ -1,0 +1,81 @@
+﻿ .file
+ {
+     border: solid 1px black;
+     padding: 2px;
+     margin: 2px;
+     float: left;
+     height: 20px;
+     width: 200px;
+     overflow: hidden;
+     line-height: 20px;
+     display: block;
+     color:black;
+ }
+    .file a {
+    color:black;   
+ }
+ .filename
+ {
+     margin: 2px;
+     vertical-align: middle;
+     width: 90px;
+     height: 20px;
+     display: block;
+     overflow: hidden;
+     float: left;
+ }
+ .fileSize
+ {
+     float: right;
+     height: 20px;
+     line-height: 20px;
+     width: 100px;
+     overflow: hidden;
+     display: block;
+     text-align: right;
+ }
+ .btnDelete
+ {
+     float: right;
+     vertical-align: middle;
+     height: 20px;
+     line-height: 20px;
+     padding: 3px 0px;
+ }
+ .btnDelete img
+ {
+     margin: 3px 0px;
+     vertical-align: middle;
+ }
+ .fileUpload
+ {
+     clear:both;
+     float:none;
+     width:97%;
+     min-height: 30px;
+     max-height: 90px;
+     overflow: auto;
+     border: solid 1px #CCC;
+     line-height: 30px;
+ }
+ .framImg {
+     clear:both;
+     float:none;
+     width:600px;
+     min-height:100px;
+     overflow: auto;
+     border: solid 1px #808080;
+}
+.showSmallImg {
+    width:80px;
+    height:70px;
+    border:dotted 2px #CCC;
+    margin:8px 5px;
+    float:left;
+}
+.imgList {
+    margin: 5px auto; width: 65px; height: 50px;
+}
+.btnDelImg {
+    padding:0px; float:right; cursor:pointer;
+}

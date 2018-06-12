@@ -1,0 +1,23 @@
+.TreeView {
+color: #666; background-color:#FFFFFF; overflow:hidden; text-overflow:ellipsis;  white-space:nowrap;
+}
+.TreeView img {
+border: 0px;vertical-align: middle; 
+}
+
+
+.TreeView .clip {
+vertical-align:middle; cursor:default; white-space:nowrap;overflow:hidden; text-overflow:ellipsis;
+}
+.Node
+{
+border:1px solid #FFFFFF; vertical-align:middle; cursor:default; white-space:nowrap;overflow:hidden; text-overflow:ellipsis;padding:2px;
+}
+.Node_Hover
+{
+border:1px solid #EAF6B8;background-image:url(images/toolbar_hover.gif?v=1.1);	background-repeat:repeat-x; vertical-align:middle; cursor:default; white-space:normal;overflow:hidden; text-overflow:ellipsis; padding:2px;
+}
+.SelectedNode
+{
+border:1px solid #A3C4A2;background-image:url(images/toolbar_selected.gif?v=1.1);	background-repeat:repeat-x; vertical-align:middle; cursor:default; white-space:normal;overflow:hidden; text-overflow:ellipsis; padding:2px;
+}

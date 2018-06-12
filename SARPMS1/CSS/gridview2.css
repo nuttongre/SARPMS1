@@ -1,0 +1,121 @@
+﻿.gridview
+{
+border:1px solid #BED6E0; width:100%
+}
+.gridview td
+{
+vertical-align:middle;height:22px; line-height:22px;padding:0px 3px;
+}
+div.gridview_header
+{
+ background:url(gridview/header_bg.gif) repeat-x left top;height:23px; line-height:23px;	text-align:center;  padding:0px 3px;vertical-align:middle;	font-size:16px;text-overflow:ellipsis; overflow:hidden;
+}
+.gridview_header th, .gridview_header div
+{
+ background:url(gridview/header_bg.gif) repeat-x left top;height:23px; line-height:23px;	text-align:center;  padding:0px 3px;vertical-align:middle;	font-size:16px;text-overflow:ellipsis; overflow:hidden;
+}
+.gridview_header a:link, .gridview_header a:visited, .gridview_header a:hover
+{
+	 clear:both; float:none; display:block; vertical-align:middle; text-align:left; height:23px; line-height:23px; color:#444444; font-style:normal; text-overflow:ellipsis; overflow:hidden;
+}
+.gridview_header .hover
+{
+	background:url(gridview/header_hover.gif) repeat-x left top;
+}
+
+
+.gridview_header .selected
+{
+	background:url(gridview/header_selected.gif) repeat-x left top;
+}
+
+.gridview_header .sortASC
+{
+	background:url(gridview/header_selected.gif) repeat-x left top;
+}
+
+.gridview_header .sortASC a:link, .gridview_header .sortASC a:visited, .gridview_header .sortASC a:hover
+{
+	background:url(gridview/sort_asc.gif) no-repeat 50% top; 
+
+}
+.gridview_header .sortDESC
+{
+	background:url(gridview/header_selected.gif) repeat-x left top;	 
+
+}
+.gridview_header .sortDESC a:link, .gridview_header .sortDESC a:visited, .gridview_header .sortDESC a:hover
+{
+	background:url(gridview/sort_desc.gif) no-repeat 50% top;	 clear:both; float:none;
+
+}
+
+.gridview_rowalt td
+{
+	 background:url(gridview/row_alternet.gif) repeat-x left top;height:22px; line-height:22px; vertical-align:middle
+}
+.gridview_rowselected td
+{
+	 background:url(gridview/row_selected.gif) repeat-x left top;height:22px;  line-height:22px;vertical-align:middle
+}
+.gridview_rowhover td
+{
+	 background:url(gridview/row_hover.gif) repeat-x left top;height:22px;  line-height:22px;vertical-align:middle
+}
+.gridview_rowitem td
+{
+	vertical-align:middle;height:22px; line-height:22px; background-color:#FFFFFF;
+}
+.gridview_dataitem
+{
+	 overflow:hidden; text-overflow:ellipsis;  vertical-align:middle; line-height:20px; height:20px; 
+}
+.gridview_pager td
+{
+	 padding:1px; 
+}
+.gridview_pager table td
+{
+	border:none;
+}
+
+.gridview_pager span
+{
+ line-height:18px;	height:20px; width:20px; border:1px solid #BED6E0;background:url(gridview/pager_selected.gif) repeat-x left top; vertical-align:middle;text-align:center; display:block; float:left
+}
+.gridview_pager a
+{
+	display:block;height:20px; width:20px; vertical-align:middle;text-align:center; line-height:18px; float:left
+}
+.gridview_pager a:link
+{
+	  border:1px solid #D7DCE1; background-color:#F6F9FB;
+}
+.gridview_pager a:visited
+{
+	border:1px solid #D7DCE1; background-color:#F6F9FB;
+}
+.gridview_pager a:hover
+{
+	 border:1px solid #BED6E0;  background:url(gridview/pager_hover.gif) repeat-x left top; 
+}
+.gridview_firstPage
+{
+cursor:hand; height:10px; width:10px; background:url(gridview/first.gif) no-repeat center center; display:inline-block
+}
+.gridview_nextPage
+{
+ cursor:hand; height:10px; width:10px; background:url(gridview/next.gif) no-repeat center center; display:inline-block
+}
+.gridview_lastPage
+{
+cursor:hand; height:10px; width:10px; background:url(gridview/last.gif) no-repeat center center;display:inline-block
+}
+.gridview_prevPage
+{
+	cursor:hand; height:10px; width:10px; background-image:url(gridview/prev.gif) no-repeat center center; display:inline-block
+}
+.gridview_footer
+{
+	  background-color:#e4ecf1;
+}

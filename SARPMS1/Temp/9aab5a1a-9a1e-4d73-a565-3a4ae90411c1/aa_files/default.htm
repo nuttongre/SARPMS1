@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Content Playback</title>
+<script language="JavaScript" type="text/javascript">
+		var jsReady=false;
+		function winLoad() {
+			jsReady=true;		
+		}
+		
+		function isReady(){
+			return jsReady;
+		}
+		
+		function startPlaySWF() {			
+			var obj = navigator.userLanguage || navigator.language;	
+			$("StudioPlayer").setUserLanguage(obj.toLowerCase());
+			$("StudioPlayer").setPlayType(1);	
+			$("StudioPlayer").showSearchTab(false);
+			$("StudioPlayer").setLocationUrl(window.location.href);			
+			$("StudioPlayer").start();
+			return;
+		}
+		
+		function $(_sId){
+			var obj,err;		
+			try {
+				if (navigator.appName.indexOf("Microsoft") != -1) {
+	         obj = document.getElementById(_sId);
+	      } else {
+	         obj = document[_sId];
+	      }
+			} catch(err) {
+				
+			}
+			if ( !obj ) {
+				//alert(_sId);
+			} else {
+				return obj;
+			}	
+		}
+		
+		function getFlashObj(sId) {
+			var strReturn;
+			
+			strReturn = "<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0\" width=\"100%\" height=\"100%\" id=\"" + sId + "\" align=\"middle\">";
+			strReturn += "<param name=\"allowScriptAccess\" value=\"always\" />";
+			strReturn += "<param name=\"allowFullScreen\" value=\"true\" />";
+			strReturn += "<param name=\"movie\" value=\"StudioPlayer.swf\" />";
+			strReturn += "<param name=\"quality\" value=\"high\" />";
+			strReturn += "<param name=\"bgColor\" value=\"#80878B\" />";
+			strReturn += "<embed src=\"StudioPlayer.swf\" quality=\"high\" bgcolor=\"#80878B\" width=\"100%\" height=\"100%\" id=\"" + sId + "\" name=\"" + sId + "\" align=\"middle\" allowScriptAccess=\"always\" allowFullScreen=\"true\" type=\"application/x-shockwave-flash\" pluginspage=\"http://www.adobe.com/go/getflashplayer\" />";
+			strReturn += "</object>";	
+			return strReturn;
+		}
+</script>
+</head>
+
+
+<body onload="winLoad();" topmargin="0" leftmargin="0" rightmargin="0" style="overflow:hidden; background-color:#80878B">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0">	
+	<tr>
+		<td bgcolor="#80878B">		
+				<script type='text/javascript'>
+					document.open();
+					document.write(getFlashObj("StudioPlayer"));
+					document.close();
+				</script>	
+		</td>
+	</tr>	
+</table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿
+#actoutside
+{
+	padding:5px 0 0 20px;
+	width:100%;
+}
+.ulStandard
+{
+	padding:0 0 0 10px;	
+}
+.ulIndicators
+{
+	padding:0 0 0 40px;			
+}
+.ulIndicators li
+{
+	clear:both;
+	float:none;		
+}
+.spantxtStandardAct
+{
+	color:Black;
+	font-size:14pt;
+	font-weight:bold;
+	cursor:default;
+}
+.spantxtIndicatorsAct
+{
+	color:#000A55;
+	font-size:12pt;	
+	cursor:default;
+}
+.spantxtCountNormal
+{
+	color:Black;
+	float: right; 
+	padding: 0 50px 0 0;
+	font-size:14pt;
+	font-weight:bold;
+	cursor:pointer;
+}
+.spantxtCountRed
+{
+	color:Red;
+	float: right; 
+	padding: 0 50px 0 0;
+	font-size:14pt;
+	font-weight:bold;
+	cursor:pointer;
+}
+.imgG
+{
+	list-style-image:url(../Image/icon/icon4g.gif)	
+}
+.imgR
+{
+	list-style-image:url(../Image/icon/icon4r.gif)	
+}
+.imgGG
+{
+	list-style-image:url(../Image/icon/icon1g.png)	
+}
+.imgRR
+{
+	list-style-image:url(../Image/icon/icon1r.png)	
+}

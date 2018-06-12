@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1551707e-547d-4b86-9169-ee4d81b7f713}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/SARPMS1</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SourceWebProject>http://localhost:2419</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/4/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <!--<AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">10.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">10.0.*</AssemblyVersion>
+    <OutputPath>$(MSBuildProjectDirectory)\..\..\TempPackageBuild\$(AssemblyFileVersion)\</OutputPath>-->
+    <OutputPath>$(MSBuildProjectDirectory)\..\..\TempPackageBuild\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\AssemblyInfo.cs" />
+    <AssemblyVersionFiles Include="$(MSBuildProjectDirectory)\App_Code\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Target Name="AssemblyVersion" Inputs="@(AssemblyVersionFiles)" Outputs="UpdatedAssemblyVersionFiles">
+    <Message Text="Setting AssemblyVersion..." Importance="High" />
+    <AssemblyInfo SkipVersioning="true" AssemblyInfoFiles="%(AssemblyVersionFiles.FullPath)" />
+  </Target>
+  <!--<ItemGroup>
+    <AssemblyAttributes Include="AssemblyTitle">
+      <Value>SAR</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyDescription">
+      <Value></Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyCompany">
+      <Value>บริษัทสตาร์ซอฟต์แวร์ จำกัด</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyTrademark">
+      <Value>http://www.starsoftware.co.th/</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyProduct">
+      <Value>SAR</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyCopyright">
+      <Value>© 2012</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>-->
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

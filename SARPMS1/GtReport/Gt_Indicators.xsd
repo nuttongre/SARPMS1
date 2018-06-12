@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="data1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="data1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StandardCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StandardName" type="xs:string" minOccurs="0" />
+              <xs:element name="StdScoreGroupID" type="xs:string" minOccurs="0" />
+              <xs:element name="IndicatorsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="IndicatorsName" type="xs:string" minOccurs="0" />
+              <xs:element name="WeightScore" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Score" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ScoreStd" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Translation" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" type="xs:int" minOccurs="0" />
+              <xs:element name="GradeStd" type="xs:int" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="Sort2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

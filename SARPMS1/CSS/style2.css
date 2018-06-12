@@ -1,0 +1,912 @@
+ /*@font-face {
+    font-family: SukhumvitReg;
+    src: url('fo/SukhumvitReg.eot');
+    src: local('SukhumvitReg'), url('fo/SukhumvitReg.eot') format('embedded-opentype'),
+         local('SukhumvitReg'), url('fo/SukhumvitReg.woff') format('woff'),
+         local('SukhumvitReg'), url('fo/SukhumvitReg.ttf') format('truetype'),
+         local('SukhumvitReg'), url('fo/SukhumvitReg.svg#SukhumvitRegular') format('svg');
+}
+@font-face {
+    font-family: SukhumvitBold;
+    src: url('fo/SukhumvitBold.eot');
+    src: local('SukhumvitBold'), url('fo/SukhumvitBold.eot') format('embedded-opentype'),
+         local('SukhumvitBold'), url('fo/SukhumvitBold.woff') format('woff'),
+         local('SukhumvitBold'), url('fo/SukhumvitBold.ttf') format('truetype'),
+         local('SukhumvitBold'), url('fo/SukhumvitBold.svg#SukhumvitBold') format('svg');
+}*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+a:link {color: #2D3494;text-decoration: none;}
+a:visited {color: #0000cc;text-decoration: none}
+a:hover {color: #FF6633;}
+a:active {color: #FF0000;}
+html 
+{
+   font-family: Arial,Helvetica,sans-serif;
+   font-size:medium;
+}  
+body
+{
+	margin:0px;
+	padding:0px;
+}
+#containner
+{
+	min-height:600px;
+}
+#page
+{
+	min-height: 600px; 
+	margin: 0 20px 0 20px;
+}
+#banner 
+{
+    background:url(../Image/BN.jpg) no-repeat left;
+    height:40px;
+}
+#banner2 
+{
+    background:url(../Image/BN2.jpg) no-repeat left;
+    height:40px;
+}
+#mainmenu
+{
+	padding:5px 0 5px 5px;
+    background-color:#5797BB;
+    min-height:50px;
+}
+#frame {
+    min-height: 600px;
+    padding: 5px;
+    border: 1px solid #424242;
+}
+#leftmenu
+{
+   width:20%;
+   min-height:600px;
+   float:left;
+   /*background:url(../Image/line2.jpg) repeat-y top right;*/
+}
+#layout
+{
+   float:right;
+   width:100%;
+   min-height:600px;
+   background-color:White;
+   border:solid 1px #4D4D4D;
+}
+#layout2
+{
+   float:right;
+   width:79%;
+   min-height:600px;
+   background-color:White;
+}
+#footer 
+{
+   width:100%;
+}
+#content 
+{
+   width:72em;
+   margin-top: 0em;
+   margin-bottom: 0em;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #ffffff;
+   border : solid 0.1em #999999;
+}
+#txtSchool
+{
+	color:White;
+	font-size:18pt;
+	font-weight:bold;
+	padding:5px 0 0 10px;	
+}
+.menuhead
+{ 
+	text-align:right;	
+}
+.clear
+{ 
+	clear:both;
+	float:none;
+}
+.headTable
+{
+	background:url(../Image/gradient.png) repeat-x left center;	
+    COLOR: #FFFFFF; 
+    HEIGHT: 25px; 
+    BACKGROUND-COLOR: #424242 !important; 
+    TEXT-ALIGN: left;
+    vertical-align:middle;
+    border:solid 1px #424242;
+    font-size:large; 
+    font-weight:bold;
+    padding: 0 0 0 10px;
+}
+.headTablemg 
+{
+    margin: 4px 2px 2px 2px;
+}
+.headMenu
+{
+    COLOR:Black; 
+    TEXT-ALIGN: center;  
+}
+.F_Head
+{
+    width : 30%; 
+    text-align : right;  
+    vertical-align:top;
+}
+.B_Head
+{
+    WIDTH: 70%; 
+    text-align: left;  
+    vertical-align:top; 
+}
+/*Gradient Bt Class*/
+html > body .gradient
+{
+	background:url(../Image/gradient.png) repeat-x left center;
+	border:solid 1px;
+}
+.bgColor
+{
+	background-color:#00b0ea !important;
+}
+.bgColorGray
+{
+	background-color:#D8D8D8 !important;
+}
+.bgPopUp
+{
+	background:url(../Image/Crystal_Rush.gif) no-repeat left center;
+}
+.bgBlue
+{
+	background:url(../Image/bgBlue.gif) no-repeat right center;
+}
+.btAdd
+{
+    background:url(../Image/bt_add.gif) no-repeat left center; 
+	border:0; height: 26px;
+	cursor:pointer;
+	font-size:large;
+	font-weight:bold;
+	color:#424242;
+}
+.btAdddt
+{
+    background:url(../Image/addbt.png) no-repeat left center; 
+	border:0; height:20px; width:45px;
+	cursor:pointer;
+	font-size:medium;
+	font-weight:bold;
+	color:#424242;
+}
+.btAddUser
+{
+    background:url(../Image/adduser.gif) no-repeat left center; 
+	border:0;
+	cursor:pointer;
+}
+.btPost
+{
+    background:url(../Image/reporticon.gif) no-repeat left center; 
+	border:0;
+}
+.btPull
+{
+    background:url(../Image/go.png) no-repeat left center; 
+	border:0;
+}
+.btYes
+{
+    background:url(../Image/bt_Yes.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btYesAndGo
+{
+    background:url(../Image/bt_YesAndGo.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btYesToo
+{
+    background:url(../Image/bt_YesToo.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btNo
+{
+    background:url(../Image/bt_No.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor : pointer;
+	font-size:large;
+	color:#424242;
+}
+.btEditDate
+{
+    background:url(../Image/bt_EditDate.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btEditBudget
+{
+    background:url(../Image/bt_EditBudget.gif) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btBack
+{
+	background:url(../Image/bt_Back.png) no-repeat left center; 
+	border:0; width:32px; height: 32px;
+	cursor : pointer;
+}
+.btApprove
+{
+    background:url(../Image/bt_Approve.png) no-repeat left center; 
+	border:0; width:102px; height: 41px;
+	cursor:pointer;
+}
+.btUnApprove
+{
+    background:url(../Image/bt_UnApprove.png) no-repeat left center; 
+	border:0; width:102px; height: 41px;
+	cursor : pointer;
+}
+.btDelete
+{
+	background:url(../Image/bt_Del.png) no-repeat left center; 
+	border:0; width:40px; height: 20px;
+	cursor : pointer;
+}
+.btPrint
+{
+	background:url(../Image/bt_print.gif) no-repeat left bottom;
+	border:0;
+	height:27px; 
+	cursor:pointer;
+	font-size:large;
+	font-weight:bold;
+	color:#424242;
+}
+.btlogin2
+{
+	width:123px;
+	height:33px;
+	background:url(../Image/Login.png) no-repeat left bottom;
+	border:none;
+	cursor:pointer;
+}
+.btlogin
+{
+	width:123px;
+	height:33px;
+	background:url(../Image/Login.png) no-repeat left top;
+	border:none;
+	cursor:pointer;
+}
+.btAttachFile
+{
+	background:url(../Image/clip.gif) no-repeat left bottom;
+	border:none;
+}
+.btNone
+{
+	display:none;	
+	border:none;
+	width:0px;
+}
+.btImportExcel
+{
+    background:url(../Image/excelicon.png) no-repeat left center; 
+	border:0; height: 24px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btBackUp
+{
+    background:url(../Image/bt_BackUpDB.png) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.btRestore
+{
+    background:url(../Image/bt_RestoreDB.png) no-repeat left center; 
+	border:0; height: 27px;
+	cursor:pointer;
+	font-size:large;
+	color:#424242;
+}
+.bgColor2
+{
+	background-color:#00b0ea !important;
+}
+/*EndGradientBtClass*/
+/*หน้า Login*/
+.loginSpan
+{
+    color:#0B0B3B; 
+    font-weight:bold; 
+    font-size:large;
+}
+.logintxt
+{
+	background:url(../Image/txtbox.gif) no-repeat left bottom;
+    border:none; 
+    font-size:large; 
+    font-weight:bold; 
+    width:200px; 
+    color: #6699FF;
+    height:24px;
+}
+/*จบหน้า Login*/
+/*LinkMainMenu*/
+.MenuHeadLink
+{
+    color:#000;
+    font-weight:bold;
+    font-size:large;
+}
+.MenuLink a
+{
+	color:#85864d;
+	font-weight:bold;
+	font-size:9pt;
+}
+.MenuLink a:hover
+{
+	color:#000;
+	font-weight:bold;
+	font-size:9pt;
+}
+.linkMain
+{
+    text-align:left;
+    padding: 0 0 0 10px;
+    list-style-type:none;
+}
+.linkMain2
+{
+    text-align:left;
+    padding:0 0 0 20px;
+    list-style-type:none;
+}
+/*EndLinkMainMenu*/
+/*SearchClass*/
+.tableSearch
+{
+	border:solid 1px #6E6E6E;
+	width:70%;	
+}
+.headSearch
+{
+	text-align: left; 
+	padding: 0 0 0 5px; 
+    background:url(../Image/MenuStlye/mainbk.png) repeat-x left top;
+    background-color:#313638;
+    border: solid 1px #6E6E6E;	
+}
+.SearchtxtF
+{
+  width:25%; 
+  text-align:right;
+}
+.SearchF
+{
+   width:65%; 
+   text-align:left;
+}
+.SearchB
+{
+   width:10%; 
+   text-align:left;
+}
+.ddlSearch
+{
+	border: solid 1px #5797BB; 
+	font-size:medium;
+    color:Black;
+    background-color:#D8D8D8;
+}
+.btSearch
+{
+	background:url(../Image/search.png) no-repeat left bottom;
+	border:none; width:25px; height:22px;
+	cursor:pointer;
+}
+.btSearchOver
+{
+	background:url(../Image/search.png) no-repeat left top;
+	border:none; width:25px; height:22px;
+	vertical-align:bottom;
+	cursor:pointer;
+}
+.txtSearch
+{
+    border: solid 1px #5797BB;
+    font-size:medium;
+    width: 315px; height:20px;
+    vertical-align:bottom;
+    background:url(../Image/MenuStlye/mainbk.png) repeat-x left top;
+    background-color:Gray;
+}
+/*EndSearchClass*/
+/*HeadMessageClass*/
+.headLine
+{
+    color:White;
+    background-color:#757BCA;
+    width:100%;
+    font-weight:bold;
+    font-size:medium;
+    border:solid 1px black;
+}
+.headMsg
+{
+    color:#318820;
+    width:100%;
+    font-weight:bold;
+    font-size:medium;
+}
+.headMsgError
+{
+    color:#CD273E;
+    width:100%;
+    font-weight:bold;
+    font-size:medium;  
+}
+.headBox 
+{
+    background:url(../Image/MenuStlye/mainbk.png) repeat-x left top;
+    background-color: #313638;
+}
+/*EndHeadMessageClass*/
+/*รูปลิงค์*/
+.imgback
+  {
+  	cursor: pointer;
+  	 float:left;
+  }
+/*spantxt*/
+.spantxt
+{
+color: #424242;
+font-weight:bold;    
+font-size:medium;
+}
+.spantxt2
+{ 
+	font-weight:bold;	
+}
+.spantxt3
+{
+	color:Black;
+	font-size:medium;
+}
+.spantxt4
+{
+	color:#6E6E6E; /*สีเทา*/
+	font-size:medium;
+}
+.spantxt5
+{
+	color:#B40404; /*สีแดง*/
+	font-size:medium;
+}
+.spantxt6
+{
+	color:#088A08; /*สีเขียว*/
+	font-size:medium;
+}
+.spantxtRed
+{
+	color:Red;
+	font-size:medium;	
+}
+.spantxtGreen
+{
+	color:Green;
+	font-size:medium;	
+}
+.spansize14
+{
+	font-size:large;
+}
+/*ErrorMsgClass*/
+.ErrorMsg
+{
+    color:Red; 
+    display:none;
+}
+/*EndErrorMsgClass*/
+/*ddlClass*/
+.ddl
+{   
+	border: solid 1px #5797BB; 
+	font-size:medium;
+    color:Black;
+}
+/*EndddlClass*/
+/*txtBoxClass*/
+.txtBox
+{
+    border:solid 1px;
+    font-size:medium;
+}
+.txtBoxNum
+{
+	 text-align:right;  
+	 border: solid 1px #c8b800;
+	 font-size:medium;	 
+     background:url(../Image/MenuStlye/mainbk.png) repeat-x left top;
+     background-color:#fffa00;
+}
+.txtBoxnone
+{
+	border:none 0px #FFFFFF;
+	color:White;
+	width:0px;	
+}
+.txtBoxlblnone
+{
+	border:none 0px #FFFFFF;
+    color: #424242;
+    font-weight:bold;    
+    font-size:medium;
+    width:200px;
+}
+.txtBoxNoBorder 
+{
+    border:solid 1px White ;
+    width:20px;
+}
+.txt50
+{
+	width:50px;	
+}
+.txt80
+{
+	width:80px;	
+}
+.txt100
+{
+	width:100px;	
+}
+.txt150
+{
+	width:150px;	
+}
+.txt200
+{
+	width:200px;
+}
+.txt250
+{
+	width:250px;
+}
+.txt300
+{
+	width:300px;	
+}
+.txt400
+{
+	width:400px;	
+}
+.txt500
+{
+	width:500px;	
+}
+.txt550
+{
+	width:550px;	
+}
+.txtBoxL
+{
+    border: solid 1px #5797BB;
+    font-size:medium;
+}
+.txtBoxL2
+{
+    border: solid 2px #5797BB;
+    font-size:medium;
+}
+.txtReadOnly
+{
+	border: solid 1px #767676;
+	color:black;
+	font-size:medium;
+	background-color:#D8D8D8;
+}
+.txtNumReadOnly
+{
+	border: solid 1px #767676;
+	color:#767676;
+	text-align:right;
+}
+.txtBoxNotType
+{
+    border:none;
+    font-size:medium; 
+}
+.txtLong
+{  
+    width: 300px;
+}
+.txtShort
+{
+    width: 250px;
+}
+.txtRight
+{
+	text-align:right;	
+}
+/*EndtxtBoxClass*/
+/*Htxt หัวข้อใหญ่*/
+.htxt
+{
+    font-size:large; 
+    font-weight:bold; 
+    color:Black;
+}
+/*Class Master*/
+.ColorMaster
+{
+    /*background-color: #26b9e3;*/
+    background-color: #FFFFFF;
+}
+.ColorRed
+{
+    color:Red;
+}
+.ColorPopUp
+{
+	background-color: #befffe;
+}
+.Star
+{
+	vertical-align:bottom;	
+}
+/*ClassShow*/
+.DataFont
+{
+    width : 20%; 
+    vertical-align:top;
+    text-align: right; 
+}
+.DataBack
+{
+    width : 80%; 
+    text-align: left; 
+}
+.font2
+{
+	width:15%; 
+	text-align:right;
+	vertical-align:top;
+}
+.back2
+{
+	width:65%; 
+	text-align:left;
+	vertical-align:top;
+}
+.ShowFont
+{
+    width : 30%; 
+    vertical-align:top;
+    text-align: right; 
+    font-size:small; 
+    font-weight:bold;
+    color:#4e4e4e;
+}
+.ShowBack
+{
+    width : 70%; 
+    text-align: left; 
+    font-size:small;
+    color:#777778;
+}
+.worklist
+{
+    margin:0px; padding:0px; list-style-type:none; text-align:left;
+    width:20px; height:20px;
+    overflow:hidden;
+}
+.EditLog
+{
+    font-size:10px;
+ 
+}
+/*AttachFile*/
+.rpt_container
+{
+	border: solid 1px silver; 
+	width: 50%; 
+	height: 50px;
+	padding-top:5px;
+	margin-top:5px;
+}
+.rpt_content
+{
+	border: solid 1px #BBD8FB;
+	background-color:#F3F7FD;
+	margin:2px;
+	padding:2px;
+}
+.button_green2
+{
+	cursor:hand;
+	border:1px solid #396B21;  
+	margin:0px 2px; 
+	height:16px; 
+	padding:0 3px 0px 3px; 
+	color:#ffffff; 
+	font-size:9pt; 
+	background-color :#649D4B;
+}
+/*SarView*/
+#spnSvHead
+{
+	color:#6E6E6E;
+	font-weight:bold;	
+	font-size:medium;
+	cursor:pointer;
+}
+.spnSvHeadAc
+{
+	color:#000000;
+	font-weight:bold;	
+	font-size:medium;
+}
+.dpnone
+{
+	display:none;	
+}
+.spnCutbudgetG 
+{
+    color:green;
+}
+.spnCutbudgetR
+{
+    color:red;
+}
+.spnCutbudgetB 
+{
+    color:black;
+}
+.cutbudget
+{
+	border:solid 1px Gray; 
+	text-align:center; 
+	width:20%	
+}
+.cutbudget2
+{
+	border:solid 1px Gray; 
+	text-align:right; 
+	padding:0 60px 0 0;
+	width:20%;
+	height:20px;
+}
+.cutbudget3
+{
+	border:solid 1px Gray; 
+	text-align:center;
+	width:20%;
+}
+.cutbudgetBg
+{
+	background-color:#D8D8D8;
+	color:Black;
+	font-weight:bold;
+	height:25px;	
+}
+.IncomeHead
+{
+	border:solid 1px Black; 
+	text-align:center; 
+	background-color:#D8D8D8;
+	height:20px;
+}
+.IncomeDetail
+{
+	border:solid 1px Gray; 
+	text-align:center; 
+	height:20px;
+}
+.SchoolName
+{ cursor:pointer;
+  color:White;
+  font-size:20pt;
+  font-weight:bold;	
+}
+.tDay
+{ cursor:pointer;
+  color:White;
+  font-size:16pt;
+  font-weight:bold;	
+}
+.sdRow {
+    float:left;
+    width:100%;
+    text-align:center;
+    padding:5px 0 5px 0;
+}
+.footerTotal {
+    float:left; 
+    border-left:solid 2px gray;
+    border-bottom:solid 2px gray;
+    border-right:solid 2px gray;
+    background-color:black;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    width:100%;
+}
+.lblTotal1 {
+    color:#f6f822;
+}
+.lblTotal2 {
+    color:#61e62c;
+}
+.lblTotal3 {
+    color:#30f5f5;
+}
+.txtpointer {
+    cursor:pointer;
+}
+.ManageMainMenu {
+    width:700px; min-height:400px; margin:0 auto;position: relative;
+}
+.ManageDivMenu {
+    width:120px; height:120px; float: left; cursor:pointer;
+}
+.ManageMiniMainMenu {
+    width:850px; min-height:50px; margin:0 auto;
+}
+.divMenu {
+    width:120px; height:140px; float: left; margin: 35px 50px; color:white; text-align:center;
+}
+.MinidivMenu {
+    width:1px; height:1px; float: left; font-size:0px;margin: 0px 50px;
+}
+.divMiniMainMenu {
+    width:560px; min-height:40px; margin:0 auto; background-color:black;
+}
+.ManageMiniDivMenu {
+    width:30px; height:30px; float: left; margin: 10px 30px; cursor:pointer; 
+}
+.ui-effects-transfer { border: 2px dotted gray; }
+
+.ClearFrame {
+    display:none;
+}
+.OpenFrame {
+    display:block;
+}
+.lblMenu {
+    color:white; font-size:14px; font-weight:bold; text-align:center;
+}

@@ -1,0 +1,72 @@
+﻿<%@ Page Language="C#" MasterPageFile="../Master/MasterOriginal.master" AutoEventWireup="true"
+    CodeFile="ConvertExcel.aspx.cs" Inherits="ConvertExcel" %>
+<%@ Register assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" namespace="CrystalDecisions.Web" tagprefix="CR" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+    <script type="text/javascript">
+
+        function ckUpload() {
+            if ($get("<%=ipFile.ClientID%>").value == "") {
+                alert('กรุณาเลือกไฟล์ก่อน');
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+
+    <div id="pageDiv">
+        <div class="warningDiv">
+            <asp:Image ID="Img1" runat="server" Visible="false" />
+            <asp:Label ID="MsgHead" runat="server" Text="" Visible="false"></asp:Label>
+        </div>
+        <div class="headTable">
+            Upload Excel
+        </div>
+        <div class="spaceDiv"></div>
+        <div id="Div1" class="TableSearch">
+            <div class="SearchTable">
+                <div class="SearchHead">
+                    <span class="spantxt2 spansize14">Upload Excel</span>
+                </div>
+                <div class="spaceDiv"></div>
+                <div class="inputrow">
+                    <div class="SearchtxtF">
+                        <span class="spantxt">เลือกรูปแบบ : </span>
+                    </div>
+                    <div class="SearchF">
+                        <asp:RadioButtonList ID="rbtlType" runat="server" RepeatColumns="3"></asp:RadioButtonList>
+                    </div>
+                </div>
+                <div class="spaceDiv"></div>
+                <div class="spaceDiv"></div>
+                <div class="inputrow">
+                    <div class="SearchtxtF">
+                        <span class="spantxt">เลือกไฟล์ : </span>
+                    </div>
+                    <div class="SearchF">
+                        <div style="float: left;">
+                            <asp:FileUpload ID="ipFile" runat="server" CssClass="txtBox" Width="200px" />
+                        </div>
+                        <div style="float: left; padding-left: 10px;">
+                            <asp:Button ID="btImport" CssClass="btImportExcel" runat="server" ToolTip="นำเข้าไฟล์ Excel"
+                                Text="       Upload" OnClick="btUpload_Click" OnClientClick="return ckUpload();" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="spaceDiv"></div>
+            </div>
+            <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server"
+                AutoDataBind="true" DisplayGroupTree="False" EnableDrillDown="False"
+                PrintMode="ActiveX" EnableTheming="true" HasCrystalLogo="True" />
+        </div>
+        <div class="gridViewDiv">
+            <asp:Label ID="Label1" runat="server" Text="Error" Visible="false"></asp:Label>
+        </div>
+        <div class="clear"></div>
+        <div class="spaceDiv"></div>
+    </div>
+</asp:Content>

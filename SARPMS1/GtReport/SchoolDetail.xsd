@@ -1,0 +1,103 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SchoolDetail" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SchoolID" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolNo" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolName" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="Tel" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalArea" type="xs:double" minOccurs="0" />
+              <xs:element name="IsPrimaryEdu" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsSecondary" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsHighSc" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AreaStudyID" type="xs:string" minOccurs="0" />
+              <xs:element name="BirthDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Philosophy" type="xs:string" minOccurs="0" />
+              <xs:element name="Slogan" type="xs:string" minOccurs="0" />
+              <xs:element name="Policy" type="xs:string" minOccurs="0" />
+              <xs:element name="History" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:string" minOccurs="0" />
+              <xs:element name="IdentityName" type="xs:string" minOccurs="0" />
+              <xs:element name="Vision" type="xs:string" minOccurs="0" />
+              <xs:element name="ManagerName" type="xs:string" minOccurs="0" />
+              <xs:element name="LogoPath" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="DelFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsCon" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ConUser" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvinceID" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolColor" type="xs:string" minOccurs="0" />
+              <xs:element name="IdentityName2" type="xs:string" minOccurs="0" />
+              <xs:element name="iNameShow" type="xs:boolean" minOccurs="0" />
+              <xs:element name="iNameShow2" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mission" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MissionCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="MissionName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="DelFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateUser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Goals" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GoalsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="GoalsName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="DelFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateUser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Strategies" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StrategiesCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="StrategiesName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="Df" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DelFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SchoolID" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateUser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

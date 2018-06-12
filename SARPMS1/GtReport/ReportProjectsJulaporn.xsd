@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dataMaster" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectsName" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivityName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="Sort1" type="xs:int" minOccurs="0" />
+              <xs:element name="DeptName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Strategic" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FullName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Money" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectsCode" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="MoneyNo" type="xs:int" minOccurs="0" />
+              <xs:element name="MoneyDetail" type="xs:string" minOccurs="0" />
+              <xs:element name="Money" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Quarter" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectsCode" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="QuarterNo" type="xs:int" minOccurs="0" />
+              <xs:element name="QuarterSort" type="xs:int" minOccurs="0" />
+              <xs:element name="QuarterTime" type="xs:string" minOccurs="0" />
+              <xs:element name="QuarterPlan" type="xs:string" minOccurs="0" />
+              <xs:element name="QuarterTarget" type="xs:string" minOccurs="0" />
+              <xs:element name="QuarterBudget" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="data1" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StrategiesCode" type="xs:string" minOccurs="0" />
+              <xs:element name="MissionCode" type="xs:string" minOccurs="0" />
+              <xs:element name="GoalsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectsName" type="xs:string" minOccurs="0" />
+              <xs:element name="Purpose" type="xs:string" minOccurs="0" />
+              <xs:element name="Target" type="xs:string" minOccurs="0" />
+              <xs:element name="Target2" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectsDetail" type="xs:string" minOccurs="0" />
+              <xs:element name="Operation1" type="xs:string" minOccurs="0" />
+              <xs:element name="Period1" type="xs:string" minOccurs="0" />
+              <xs:element name="Place1" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp1" type="xs:string" minOccurs="0" />
+              <xs:element name="Period2" type="xs:string" minOccurs="0" />
+              <xs:element name="Place2" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp2" type="xs:string" minOccurs="0" />
+              <xs:element name="Operation3" type="xs:string" minOccurs="0" />
+              <xs:element name="Period3" type="xs:string" minOccurs="0" />
+              <xs:element name="Place3" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp3" type="xs:string" minOccurs="0" />
+              <xs:element name="Evaluation" type="xs:string" minOccurs="0" />
+              <xs:element name="EvaIndicators" type="xs:string" minOccurs="0" />
+              <xs:element name="EvaAssessment" type="xs:string" minOccurs="0" />
+              <xs:element name="EvaTool" type="xs:string" minOccurs="0" />
+              <xs:element name="Expected" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponsibleName" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponsiblePosition" type="xs:string" minOccurs="0" />
+              <xs:element name="ProposeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProposePosition" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalName" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalPosition" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalName2" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalPosition2" type="xs:string" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="Df" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DelFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CopyFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SchoolID" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateUser" type="xs:string" minOccurs="0" />
+              <xs:element name="Purpose2" type="xs:string" minOccurs="0" />
+              <xs:element name="Goal" type="xs:string" minOccurs="0" />
+              <xs:element name="Results" type="xs:string" minOccurs="0" />
+              <xs:element name="PlanNo" type="xs:string" minOccurs="0" />
+              <xs:element name="StatuteNo" type="xs:string" minOccurs="0" />
+              <xs:element name="IdentityName" type="xs:string" minOccurs="0" />
+              <xs:element name="IdentityName2" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivityName" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivitySubName" type="xs:string" minOccurs="0" />
+              <xs:element name="YearPlan4" type="xs:string" minOccurs="0" />
+              <xs:element name="StrategiesName" type="xs:string" minOccurs="0" />
+              <xs:element name="MissionName" type="xs:string" minOccurs="0" />
+              <xs:element name="GoalsName" type="xs:string" minOccurs="0" />
+              <xs:element name="StandardNationName" type="xs:string" minOccurs="0" />
+              <xs:element name="StandardMinistryName" type="xs:string" minOccurs="0" />
+              <xs:element name="StandardName" type="xs:string" minOccurs="0" />
+              <xs:element name="IndicatorsName" type="xs:string" minOccurs="0" />
+              <xs:element name="StrategySPTName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

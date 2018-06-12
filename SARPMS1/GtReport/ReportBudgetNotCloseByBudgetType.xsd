@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="data1" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StrategiesCode" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectsName" type="xs:string" minOccurs="0" />
+              <xs:element name="Df" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+              <xs:element name="Sort1" type="xs:int" minOccurs="0" />
+              <xs:element name="StrategiesName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcCode" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptName" type="xs:string" minOccurs="0" />
+              <xs:element name="Subsidies" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Revenue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Free" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Welfare" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPK" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fund" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Special" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

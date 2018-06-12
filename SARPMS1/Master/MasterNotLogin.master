@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterNotLogin.master.cs"
+    Inherits="MasterNotLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <%=ConfigurationManager.AppSettings["ProjectName"]%></title>
+    <link rel="shortcut icon" href="../Image/logo/logo.ico" />
+    <link rel="icon" href="../Image/logo/logo.ico" />
+
+    <link rel="stylesheet" type="text/css" href ="../CSS/MenuFileStyle.css"  />
+    <link rel="StyleSheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/gridview.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/dialogbox.css" />
+
+    <script type="text/javascript" src="../scripts/StarFramework.js"></script>
+    <script src="../scripts/Frameworks.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="../scripts/DataGridView.js"></script>
+
+    <script type="text/javascript" src="../scripts/calendar.js"></script>
+
+    <script type="text/javascript" src="../scripts/Dialog.js"></script>
+    
+    <script src="../scripts/TreeView.js" type="text/javascript"></script>
+    
+    <link href="../CSS/TreeView.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="containner">
+        <div id="page">
+            <div id="banner">
+                <div id="txtSchool">
+                    <div style="float:right; padding:0 5px 0 0;">
+                        <asp:ImageButton ID="ImgBt1" runat="server" ImageUrl="../Image/On.gif" Width="30" Height="30" />
+                    </div>
+               </div>
+                <asp:Label ID="Label1" runat="server" ForeColor="White" Font-Bold="true" Font-Size="24px"></asp:Label>
+            </div>
+            <div id="mainmenu">
+                <ul id="css3menu1" class="topmenu" style="position: relative;top: 1px; width:99%;">
+                    <li class="topmenu"><a href="#" title="หน้าแรก" ><img src="../Image/MenuStlye/Home1.png" alt="หน้าแรก">หน้าแรก</a></li>
+                 </ul>  
+            </div>
+            <div id="frame" style="background-color:#5797BB;">
+                <div id="layout">
+                    <%--<div id="workspace">--%>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--</div>--%></div>
+                <p class="clear">
+                </p>
+            </div>
+            <div>
+                <Control:Footer ID="footer" runat="server" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,282 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.Configuration;
+using System.Web.UI.WebControls.WebParts;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Text;
+using System.Data.OleDb;
+using System.Data.SqlClient;
+using Star.Security.Cryptography;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
+using CrystalDecisions.CrystalReports.ViewerObjectModel;
+using CrystalDecisions.ReportSource;
+
+public partial class ConvertExcel : System.Web.UI.Page
+{
+    BTC btc = new BTC();
+    Connection Conn = new Connection();
+
+    private OleDbConnection exConn;
+    private ReportDocument Report;
+    private DataSet ds;
+
+    string DealerName = "";
+    string DealerNumber = "";
+    string DealerAddress = "";
+    string DateofVerification = "";
+    string AuditorName = "";
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            getddlType();
+            if (!string.IsNullOrEmpty(Request["Cr"]))
+            {
+                btc.Msg_Head(Img1, MsgHead, true, Request["ckmode"], Convert.ToInt32(Request["Cr"]));
+            }
+        }
+    }
+    private void getddlType()
+    {
+        rbtlType.Items.Insert(0, new ListItem("<img style=\"border: 0; cursor: pointer; vertical-align: top;\" width=\"50px;\" height=\"50px;\" title=\"เรียกดูรายงาน แบบเอกสาร Word\" src=\"../Image/icon/WordIcon.png\" />", "w"));
+        rbtlType.Items.Insert(1, new ListItem("<img style=\"border: 0; cursor: pointer; vertical-align: top;\" width=\"45px;\" height=\"45px;\" title=\"เรียกดูรายงาน แบบเอกสาร Excel\" src=\"../Image/icon/ExcelIcon.png\" />", "e"));
+        rbtlType.Items.Insert(2, new ListItem("<img style=\"border: 0; cursor: pointer; vertical-align: top;\" width=\"45px;\" height=\"45px;\" title=\"เรียกดูรายงาน แบบเอกสาร PDF\" src=\"../Image/icon/PdfIcon.png\" />", "p"));
+        rbtlType.DataBind();
+        rbtlType.SelectedIndex = 0;
+    }
+    private void Upload()
+    {
+        string path = ipFile.FileName; //Request.Files[0].FileName;
+        path = string.Format("~/Uploads/{0}", Path.GetFileName(path));
+        path = Server.MapPath(path);
+
+        string[] CkSprit;
+        CkSprit = Path.GetFileName(path).Split('.');
+        if (CkSprit[1] == "xlsx")
+        {
+            if (!Directory.Exists(Path.GetDirectoryName(path)))
+                Directory.CreateDirectory(Path.GetDirectoryName(path));
+                Request.Files[0].SaveAs(path);        
+                Session["ExcelName"] = Path.GetFileName(path);
+                //Session["DataInput"] = getDataByWorksheet(Session["ExcelName"].ToString());
+                Report = new ReportDocument();
+                SetReport4("rptConvertExcel", getDataByWorksheet(Session["ExcelName"].ToString()));
+        }
+        else
+        {
+            Msg_Head(true, "9", 0, "");
+        }
+    }
+    private DataView getDataByWorksheet(string worksSheetNames)
+    {
+        DataView dv = null;
+        ds = new DataSet();
+        DataTable dt1 = new DataTable();
+        dt1.Columns.Add("Year");
+        dt1.Columns.Add("Model");
+        dt1.Columns.Add("Grade");
+        dt1.Columns.Add("Color");
+        dt1.Columns.Add("FullVIN");
+        dt1.Columns.Add("Demo");
+        dt1.Columns.Add("deliverydate");
+
+        string strConn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Server.MapPath("~/Uploads/") + worksSheetNames + @";Extended Properties=""Excel 8.0;""";
+        try
+        {
+            exConn = new OleDbConnection(strConn.ToString());
+            exConn.Open();
+            string strSql = " Select * From [Sheet1$] ";
+            OleDbDataAdapter da = new OleDbDataAdapter(strSql, exConn);
+            da.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DealerName = ds.Tables[0].Rows[0][1].ToString();
+                DealerNumber = "";
+                DealerAddress = ds.Tables[0].Rows[0][5].ToString();
+                DateofVerification = ds.Tables[0].Rows[0][14].ToString();
+                AuditorName = ds.Tables[0].Rows[0][10].ToString();
+
+                int ckLoop = 0;
+                for (Int32 i = 17; i <= ds.Tables[0].Columns.Count - 1; i++)
+                {
+                    DataRow dr;
+                    dr = dt1.NewRow();
+                    dr["Year"] = ds.Tables[0].Rows[0][i + ckLoop].ToString();
+                    dr["Model"] = ds.Tables[0].Rows[0][i + ckLoop + 1].ToString();
+                    dr["Grade"] = ds.Tables[0].Rows[0][i + ckLoop + 2].ToString();
+                    dr["Color"] = ds.Tables[0].Rows[0][i + ckLoop + 3].ToString();
+                    dr["FullVIN"] = ds.Tables[0].Rows[0][i + ckLoop + 4].ToString();
+                    dr["Demo"] = ds.Tables[0].Rows[0][i + ckLoop + 5].ToString();
+                    dr["deliverydate"] = ds.Tables[0].Rows[0][i + ckLoop + 6].ToString();
+                    dt1.Rows.Add(dr);
+                    ckLoop += 8;
+                }
+                dv = dt1.DefaultView;
+            }
+        }
+        catch (Exception ex)
+        {
+            MsgHead.Text = ex.ToString();
+            MsgHead.Visible = true;
+        }
+        finally
+        {
+            if (exConn != null)
+            {
+                exConn.Close();
+                exConn.Dispose();
+            }
+        }
+        //เช็คมีข้อมูลหรือไม่
+        dv = dt1.DefaultView;
+        if (dv.Count > 0)
+        {
+            Msg_Head(true, "1", 1, "");
+            return dv;// ds.Tables[0];
+        }
+        else
+        {
+            Msg_Head(true, "1", 0, "");
+            DelFile(worksSheetNames);
+            return null;
+        }
+    }
+    private void DelFile(string worksSheetNames)
+    {
+        //ลบไฟล์
+        string x = Path.GetFileName(worksSheetNames);
+        x = Server.MapPath("~/Uploads/" + x);
+        if (File.Exists(x))
+        {
+            File.Delete(x);
+        }
+    }
+    private void Msg_Head(Boolean Enables, String mode, Int32 i, string Msg)
+    {
+        if (i > 0)
+        {
+            switch (mode)
+            {
+                case "1":
+                    MsgHead.Text = "เรียบร้อย ! <BR> <small>Upload File เรียบร้อยแล้ว</small>";
+                    break;
+                case "2":
+                    MsgHead.Text = "เรียบร้อย ! <BR> <small>บันทึกข้อมูลเรียบร้อยแล้ว</small>";
+                    break;
+                case "3":
+                    MsgHead.Text = "เรียบร้อย ! <BR> <small>ลบข้อมูลเรียบร้อยแล้ว</small>";
+                    break;
+                case "4":
+                    MsgHead.Text = "";
+                    break;
+            }
+            Img1.ImageUrl = "~/Image/msg_check.gif";
+            MsgHead.CssClass = "headMsg";
+        }
+        else
+        {
+            switch (mode)
+            {
+                case "1":
+                    MsgHead.Text = "ผิดพลาด ! <BR> <small>ไม่สามารถ Upload File ได้</small>";
+                    break;
+                case "2":
+                    MsgHead.Text = "ผิดพลาด ! <BR> <small>ไม่สามารถแก้ไขข้อมูลได้</small>";
+                    break;
+                case "3":
+                    MsgHead.Text = "ผิดพลาด ! <BR> <small>ไม่สามารถลบข้อมูลได้  เนื่องจากข้อมูลถูกใช้อยู่</small>";
+                    break;
+                case "4":
+                    MsgHead.Text = "ผิดพลาด ! <BR> <small>ไม่สามารถเพิ่มข้อมูลได้</small>";
+                    break;
+                case "9":
+                    MsgHead.Text = "ผิดพลาด ! <BR> <small>ต้องเป็น File Excel .xls เท่านั้น</small>";
+                    break;
+            }
+            Img1.ImageUrl = "~/Image/msg_error.gif";
+            MsgHead.CssClass = "headMsgError";
+        }
+        Img1.Visible = Enables;
+        MsgHead.Visible = Enables;
+    }
+    protected void btUpload_Click(object sender, EventArgs e)
+    {
+        Upload();
+    }
+    protected void btCancel_Click(object sender, EventArgs e)
+    {
+        Session.Remove("ExcelName");
+        //Session.Remove("DataInput");
+        Response.Redirect("ConcertExcel.aspx");
+    }
+    private void SetReport4(string reportName, DataView dv) 
+    {
+        ds = new DataSet();
+        ds.Tables.Add(dv.ToTable("data1"));
+        //ds.WriteXmlSchema(Server.MapPath(reportName + ".xsd"));
+        //return;
+
+        Report.Load(Server.MapPath(reportName + ".rpt"));
+
+        Report.SetDataSource(ds);
+        Report.PrintOptions.PaperSize = PaperSize.PaperA4;
+        Report.PrintOptions.PaperOrientation = PaperOrientation.Portrait;
+
+        Report.SetParameterValue("DealerName", DealerName);
+        Report.SetParameterValue("DealerNumber", DealerNumber);
+        Report.SetParameterValue("DealerAddress", DealerAddress);
+        Report.SetParameterValue("DateofVerification", DateofVerification);
+        Report.SetParameterValue("AuditorName", AuditorName);
+
+        ExportReport(rbtlType.SelectedValue);
+
+        this.Session["ReportSource1"] = Report;
+        CrystalReportViewer1.ReportSource = Report;
+        CrystalReportViewer1.DataBind();
+    } 
+    private void ExportReport(string RptType)
+    {
+        // ============================ Export to pdf file =============================
+        if (RptType == "p")
+        {
+            Report.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, false, "ExportedReport");
+        }
+        else
+        {
+            if (RptType == "w")
+            {
+                Report.ExportToHttpResponse(ExportFormatType.WordForWindows, Response, false, Page.Title);
+            }
+            else
+            {
+                Report.ExportToHttpResponse(ExportFormatType.Excel, Response, false, Page.Title);
+            }
+        }
+        Report.PrintToPrinter(2, true, 1, 2);
+        // =============================================================================
+    }
+    protected override void OnPreInit(EventArgs e)
+    {
+        //CrystalReportViewer1.ReportSource = this.Session["ReportSource"];
+        //base.OnPreInit(e);
+        if (Request["rpt"] == "1")
+        {
+            if (Session["ReportSource1"] != null)
+            {
+                CrystalReportViewer1.ReportSource = this.Session["ReportSource1"];
+                //base.OnPreInit(e);
+            }
+        }
+    }
+}

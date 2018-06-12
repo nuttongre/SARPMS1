@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="data" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivityName" type="xs:string" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="BudgetYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ActivityDetailCode" type="xs:string" minOccurs="0" />
+              <xs:element name="TDay" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeptName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcDSort" type="xs:int" minOccurs="0" />
+              <xs:element name="ActivityDetail" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Costs" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ListName" type="xs:string" minOccurs="0" />
+              <xs:element name="EntryCostsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeCode" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalP" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalD" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalG" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalMoney" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalMoney2" type="xs:double" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="EntryCostsName" type="xs:string" minOccurs="0" />
+              <xs:element name="ValueT" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalDD" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalMoney2Ag" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBudgetType" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="Money1" type="xs:double" minOccurs="0" />
+              <xs:element name="Money2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Money3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sort" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBudgetOut" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ValueT" type="xs:double" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBudgetUse" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ValueT" type="xs:double" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

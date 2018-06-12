@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dataMaster" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BudgetDetailTypeID" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="BudgetTypeID" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dept1" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MasterID" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Term" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemID" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="SetMoney" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount2" type="xs:double" minOccurs="0" />
+              <xs:element name="Price2" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount2" type="xs:double" minOccurs="0" />
+              <xs:element name="WithdrawUser" type="xs:string" minOccurs="0" />
+              <xs:element name="WithdrawDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeID" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dept2" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MasterID" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Term" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemID" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="SetMoney" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount2" type="xs:double" minOccurs="0" />
+              <xs:element name="Price2" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount2" type="xs:double" minOccurs="0" />
+              <xs:element name="WithdrawUser" type="xs:string" minOccurs="0" />
+              <xs:element name="WithdrawDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeID" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dept3" msdata:CaseSensitive="False" msdata:Locale="th-TH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MasterID" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Term" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="StudyYear" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemID" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="BudgetTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="SetMoney" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount2" type="xs:double" minOccurs="0" />
+              <xs:element name="Price2" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAmount2" type="xs:double" minOccurs="0" />
+              <xs:element name="WithdrawUser" type="xs:string" minOccurs="0" />
+              <xs:element name="WithdrawDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BudgetDetailTypeID" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Logo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picture" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
